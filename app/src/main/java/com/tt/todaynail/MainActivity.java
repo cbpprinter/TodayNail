@@ -18,15 +18,15 @@ public class MainActivity extends AppCompatActivity {
 
         TabHost.TabSpec tab1 = tabHost.newTabSpec("tab1");
         tab1.setContent(R.id.tab1);
-        tab1.setIndicator("-TAB1-");
+        tab1.setIndicator("도안");
 
         TabHost.TabSpec tab2 = tabHost.newTabSpec("tab2");
         tab2.setContent(R.id.tab2);
-        tab2.setIndicator("-TAB2-");
+        tab2.setIndicator("업체");
 
         TabHost.TabSpec tab3 = tabHost.newTabSpec("tab3");
         tab3.setContent(R.id.tab3);
-        tab3.setIndicator("-TAB3-");
+        tab3.setIndicator("마이");
 
         tabHost.addTab(tab1);
         tabHost.addTab(tab2);
