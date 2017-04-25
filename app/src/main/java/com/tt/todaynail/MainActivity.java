@@ -4,6 +4,8 @@ import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -35,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
 
         TabHost.TabSpec tab1 = tabHost.newTabSpec("tab1");
         tab1.setContent(R.id.tab1);
-        tab1.setIndicator("-TAB1-");
+        tab1.setIndicator(getString(R.string.tab1));
         GridView gridview = (GridView) findViewById(R.id.gridView1);
         gridview.setAdapter(new ImageAdapter(this));
         gridview.setOnItemClickListener(gridviewOnItemClickListener);
@@ -45,11 +47,11 @@ public class MainActivity extends AppCompatActivity {
 
         TabHost.TabSpec tab2 = tabHost.newTabSpec("tab2");
         tab2.setContent(R.id.tab2);
-        tab2.setIndicator("-TAB2-");
+        tab2.setIndicator(getString(R.string.tab2));
 
         TabHost.TabSpec tab3 = tabHost.newTabSpec("tab3");
         tab3.setContent(R.id.tab3);
-        tab3.setIndicator("-TAB3-");
+        tab3.setIndicator(getString(R.string.tab3));
 
         tabHost.addTab(tab1);
         tabHost.addTab(tab2);
@@ -103,5 +105,20 @@ public class MainActivity extends AppCompatActivity {
             imageView.setImageResource(mThumbIds[position]);
             return imageView;
         }
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+       getMenuInflater().inflate(R.menu.menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        if (id == R.id.btn_camera){
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
