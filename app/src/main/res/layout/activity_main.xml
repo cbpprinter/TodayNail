@@ -31,18 +31,31 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <LinearLayout
+
+                <RelativeLayout
                     android:id="@+id/tab1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
+
+                    <GridView
+                        android:id="@+id/gridView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:stretchMode="columnWidth"
+                        android:numColumns="3"
+                        >
+                    </GridView>
+
                     <!-- <TextView
                          android:layout_width="match_parent"
                          android:layout_height="match_parent"
                          android:text="두번째 탭"
                          />
  -->
-                </LinearLayout>
+                </RelativeLayout>
 
                 <LinearLayout
                     android:id="@+id/tab2"
