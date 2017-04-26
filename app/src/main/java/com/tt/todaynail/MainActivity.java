@@ -229,6 +229,10 @@ public class MainActivity extends AppCompatActivity {
 
         ((FrameLayout) findViewById(R.id.layout)).removeView(preview);
         preview = null;
+        Intent intent = new Intent(this, HomeActivity.class);
+        this.startActivity(intent);
+
+        finish();
 
     }
 
