@@ -63,18 +63,171 @@
                     android:layout_height="match_parent"
                     android:orientation="vertical"></LinearLayout>
 
-                <LinearLayout
+                <RelativeLayout
                     android:id="@+id/tab3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
+
+                    <TableLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"/>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#e7e7e7"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:layout_marginLeft="1dp"
+                                android:gravity="center"
+                                android:padding="3dp"
+                                android:text="네일샵"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:layout_marginLeft="1dp"
+                                android:gravity="center"
+                                android:padding="3dp"
+                                android:text="예약날짜"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:layout_marginLeft="1dp"
+                                android:gravity="center"
+                                android:padding="3dp"
+                                android:text="예약시간"
+                                />
+
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:layout_marginLeft="1dp"
+                                android:gravity="center"
+                                android:padding="3dp"
+                                android:text="A샵"
+                                android:textColor="#111111"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:layout_marginLeft="1dp"
+                                android:gravity="center"
+                                android:padding="3dp"
+                                android:text="17.01.27"
+                                android:textColor="#111111"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:layout_marginLeft="1dp"
+                                android:gravity="center"
+                                android:padding="3dp"
+                                android:text="17:00"
+                                android:textColor="#111111"
+                                />
+
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:layout_marginLeft="1dp"
+                                android:gravity="center"
+                                android:padding="3dp"
+                                android:text="B샵"
+                                android:textColor="#111111"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:layout_marginLeft="1dp"
+                                android:gravity="center"
+                                android:padding="3dp"
+                                android:text="17.01.29"
+                                android:textColor="#111111"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:layout_marginLeft="1dp"
+                                android:gravity="center"
+                                android:padding="3dp"
+                                android:text="10:00"
+                                android:textColor="#111111"
+                                />
+
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:layout_marginLeft="1dp"
+                                android:gravity="center"
+                                android:padding="3dp"
+                                android:text="C샵"
+                                android:textColor="#111111"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:layout_marginLeft="1dp"
+                                android:gravity="center"
+                                android:padding="3dp"
+                                android:text="17.02.10"
+                                android:textColor="#111111"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:layout_marginLeft="1dp"
+                                android:gravity="center"
+                                android:padding="3dp"
+                                android:text="12:00"
+                                android:textColor="#111111"
+                                />
+
+                        </TableRow>
+
+                    </TableLayout>
+
 
                     <!-- <TextView
                          android:layout_width="match_parent"
                          android:layout_height="match_parent"
                          android:text="세번째째 탭"
                         />-->
-                </LinearLayout>
+                </RelativeLayout>
 
             </FrameLayout>
         </LinearLayout>
