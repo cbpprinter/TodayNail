@@ -121,10 +121,10 @@ public class MainActivity extends AppCompatActivity {
             CropIntent.setDataAndType(uri,"image/*");
 
             CropIntent.putExtra("crop","true");
-            CropIntent.putExtra("outputX",180);
-            CropIntent.putExtra("outputY",180);
-            CropIntent.putExtra("aspectX",3);
-            CropIntent.putExtra("aspectY",4);
+            CropIntent.putExtra("outputX",150);
+            CropIntent.putExtra("outputY",150);
+            CropIntent.putExtra("aspectX",1);
+            CropIntent.putExtra("aspectY",1);
             CropIntent.putExtra("scaleUpIfNeeded",true);
             CropIntent.putExtra("return-data",true);
 

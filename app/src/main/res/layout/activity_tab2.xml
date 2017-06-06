@@ -40,13 +40,7 @@
                 android:text="Medium Text"
                 android:id="@+id/Human_gender" />
 
-            <TextView
-                android:textColor="#111111"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Medium Text"
-                android:id="@+id/Human_age" />
+
         </LinearLayout>
     </LinearLayout>
 </RelativeLayout>

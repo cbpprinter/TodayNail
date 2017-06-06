@@ -28,7 +28,7 @@ public class HomeActivity extends AppCompatActivity {
     private ListView listView;
     ArrayList<company> h_info_list;
     CompanyAdapter myadapter;
-    company myHuman1,myHuman2;
+    company myCompany1;
 
 
     private int[] mThumbIds = new int[] { R.drawable.view01,
@@ -58,15 +58,9 @@ public class HomeActivity extends AppCompatActivity {
         tab2.setIndicator(getString(R.string.tab2));
 
         listView = (ListView)findViewById(R.id.listView2);
-        myHuman1 = new company("오늘네일1", "경기도", BitmapFactory.decodeResource(getResources(), R.drawable.view01));
-        myHuman2 = new company("네일2", "서울특별시", BitmapFactory.decodeResource(getResources(), R.drawable.view02));
+        myCompany1 = new company("오늘네일1", "경기도", BitmapFactory.decodeResource(getResources(), R.drawable.view01));
         h_info_list = new ArrayList<company>();
-        h_info_list.add(myHuman1);
-        h_info_list.add(myHuman2);
-        h_info_list.add(myHuman1);
-        h_info_list.add(myHuman2);
-        h_info_list.add(myHuman1);
-        h_info_list.add(myHuman2);
+        h_info_list.add(myCompany1);
 
         myadapter = new CompanyAdapter(getApplicationContext(),R.layout.activity_tab2, h_info_list);
         listView.setAdapter(myadapter);
