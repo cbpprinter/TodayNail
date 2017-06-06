@@ -53,11 +53,11 @@ public class CompanyAdapter extends BaseAdapter {
 
         if(convertView == null) {
             convertView = inflater.inflate(this.layout, parent, false);
+
         }
         ImageView Hu_image = (ImageView) convertView.findViewById(R.id.company_image);
         TextView Hu_name = (TextView) convertView.findViewById(R.id.Human_name);
         TextView Hu_gender = (TextView) convertView.findViewById(R.id.Human_gender);
-
 
         Hu_image.setImageBitmap(data.get(position).image);
         Hu_name.setText(data.get(position).name);

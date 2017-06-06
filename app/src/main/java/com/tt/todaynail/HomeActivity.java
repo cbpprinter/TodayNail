@@ -15,6 +15,7 @@ import android.widget.TabHost;
 
 import com.tt.todaynail.tab1.ImageActivity;
 import com.tt.todaynail.tab1.ImageGridAdapter;
+import com.tt.todaynail.tab2.CompanyActivity;
 import com.tt.todaynail.tab2.CompanyAdapter;
 import com.tt.todaynail.tab2.company;
 
@@ -68,14 +69,18 @@ public class HomeActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent intent = new Intent(getApplicationContext(), ImageActivity.class); // 다음넘어갈 화면
+                Intent intent = new Intent(getApplicationContext(), CompanyActivity.class); // 다음넘어갈 화면
+
                 Bitmap sendBitmap = h_info_list.get(position).image;
 
                 ByteArrayOutputStream stream = new ByteArrayOutputStream();
                 sendBitmap.compress(Bitmap.CompressFormat.JPEG, 100, stream);
                 byte[] byteArray = stream.toByteArray();
 
-                intent.putExtra("image",byteArray);
+                intent.putExtra("image", byteArray);
+                intent.putExtra("name", h_info_list.get(position).name);
+                intent.putExtra("add", h_info_list.get(position).add);
+
                 startActivity(intent);
             }
         });

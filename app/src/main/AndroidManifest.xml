@@ -32,6 +32,10 @@
             android:name=".tab1.ImageActivity"
             android:label="Selected Image">
         </activity>
+        <activity
+            android:name=".tab2.CompanyActivity">
+
+        </activity>
 
     </application>
 
