@@ -30,10 +30,20 @@
         </activity>
         <activity
             android:name=".tab1.ImageActivity"
-            android:label="Selected Image">
+            android:label="Selected Image"
+            android:parentActivityName=".HomeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomeActivity" />
         </activity>
         <activity
-            android:name=".tab2.CompanyActivity">
+            android:name=".tab2.CompanyActivity"
+            android:parentActivityName=".HomeActivity"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomeActivity" />
+
 
         </activity>
 
