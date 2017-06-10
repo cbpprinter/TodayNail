@@ -9,9 +9,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.GridView;
 import android.widget.ListView;
+import android.widget.Spinner;
 import android.widget.TabHost;
+import android.widget.Toast;
 
 import com.tt.todaynail.tab1.ImageActivity;
 import com.tt.todaynail.tab1.ImageGridAdapter;
@@ -84,7 +87,6 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
 
         TabHost.TabSpec tab3 = tabHost.newTabSpec("tab3");
         tab3.setContent(R.id.tab3);

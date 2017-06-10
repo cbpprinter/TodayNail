@@ -55,10 +55,13 @@
             android:imeOptions="actionSend"
             android:inputType="number" />
 
-        <TimePicker
-            android:layout_width="wrap_content"
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:timePickerMode="spinner" />
+            android:entries="@array/spinner_item"
+            android:textAlignment="center"/>
 
         <DatePicker
             android:layout_width="wrap_content"
