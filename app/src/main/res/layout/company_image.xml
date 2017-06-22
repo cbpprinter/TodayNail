@@ -38,7 +38,7 @@
 
 
         <EditText
-            android:id="@+id/name"
+            android:id="@+id/user_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
@@ -75,6 +75,12 @@
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:text="예약하기" />
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="tv"/>
 
     </LinearLayout>
 </ScrollView>
