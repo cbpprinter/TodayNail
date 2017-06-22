@@ -9,9 +9,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.GridView;
 import android.widget.ListView;
 import android.widget.TabHost;
+import android.widget.TextView;
 
 import com.tt.todaynail.tab1.ImageActivity;
 import com.tt.todaynail.tab1.ImageGridAdapter;
@@ -31,6 +34,11 @@ public class HomeActivity extends AppCompatActivity {
     CompanyAdapter myadapter;
     company myCompany1;
 
+    EditText user_name;
+    EditText phone_number;
+    Button reservationButton;
+    TextView tv;
+    StringBuffer sb = new StringBuffer();
 
     private int[] mThumbIds = new int[] { R.drawable.view01,
             R.drawable.view02, R.drawable.view03,
@@ -85,6 +93,14 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
+        user_name = (EditText) findViewById(R.id.user_name);
+        phone_number = (EditText) findViewById(R.id.phone_number);
+        reservationButton = (Button) findViewById(R.id.reservationButton);
+        tv = (TextView) findViewById(R.id.tv);
+
+
+        reservationButton.setOnClickListener(myClickListener);
+
 
         TabHost.TabSpec tab3 = tabHost.newTabSpec("tab3");
         tab3.setContent(R.id.tab3);
@@ -94,6 +110,17 @@ public class HomeActivity extends AppCompatActivity {
         tabHost.addTab(tab2);
         tabHost.addTab(tab3);
     }
+
+    View.OnClickListener myClickListener = new View.OnClickListener(){
+        @Override
+        public void onClick(View v){
+            String temp="{\"user_name\""+":"+"\""+user_name.getText().toString()+"\""+ ","
+                    + "\"phone_number\""+":" + "\"" + phone_number.getText().toString() + "\"" + "}";
+
+            tv.setText(temp);
+
+        }
+    };
 
 
     @Override
