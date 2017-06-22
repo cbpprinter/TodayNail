@@ -56,12 +56,12 @@
             android:inputType="number" />
 
 
-        <Spinner
+        <!--<Spinner
             android:id="@+id/spinner"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:entries="@array/spinner_item"
-            android:textAlignment="center"/>
+            android:textAlignment="center"/>-->
 
         <DatePicker
             android:layout_width="wrap_content"

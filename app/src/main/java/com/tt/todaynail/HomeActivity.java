@@ -99,7 +99,7 @@ public class HomeActivity extends AppCompatActivity {
         tv = (TextView) findViewById(R.id.tv);
 
 
-        reservationButton.setOnClickListener(myClickListener);
+      //  reservationButton.setOnClickListener(myClickListener);
 
 
         TabHost.TabSpec tab3 = tabHost.newTabSpec("tab3");
